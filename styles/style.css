@@ -21,5 +21,15 @@ h2 {
 }
 
 h3 {
-  color:whitesmoke;
+  color: white;
+
+}
+
+.homepageheader {
+  display: block;
+}
+
+.colorgame {
+  background-color: chartreuse;
+  display: block;
 }
