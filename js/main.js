@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("color", setNewColor);
+
 
 const randomBetween = (min, max) => {
     min + Math.floor(Math.random() * (max - min + 1));
@@ -10,6 +10,7 @@ const setNewColor = () => {
     console.log(rgb)
 }
 
+document.querySelector("button").addEventListener("boxes", setNewColor);
 
 
 
