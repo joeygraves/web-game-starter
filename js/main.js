@@ -22,24 +22,11 @@ for (let i = 0; i < options.length; i++){
         options[i].addEventListener('click', win);
 
     }
-
     else {
         options[i].style.backgroundColor = setNewColor();
-        options[i].addEventListener('click', setNewColor);
+        options[i].addEventListener('click', lose);
     }
 }
-//change to win and lose functions
-//const guess = () => {
-   //win function if(document.activeElement.id == index){
-        //document.getElementById("#rgbValue").innerHTML = "Cozy Vibess, Goodjob!!";
-        //document.getElementById("#rgbValue").style.color="light purple";
-    }
-   //lose function else {
-        document.getElementById("#rgbValue").innerHTML = "Go back to CLASS!!";
-        document.getElementById("#rgbValue").style.color="red";
-    }
-}
-
 
 const win = () => {
     document.getElementById("#rgbValue").innerHTML = "Cozy Vibess, Goodjob!!";
