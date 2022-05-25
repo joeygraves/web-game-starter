@@ -25,6 +25,10 @@ h3 {
 
 }
 
+p{
+  color: aliceblue;
+}
+
 .homepageheader {
   display: block;
 }
@@ -36,7 +40,7 @@ h3 {
     margin-top: 60px;
 }
 
-.btn {
+.color-option {
   height: 170px;
   width: 170px;
   border-radius: 50%;
