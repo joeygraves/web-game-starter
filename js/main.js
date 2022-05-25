@@ -46,3 +46,7 @@ const win = () => {
     document.getElementById("#rgbValue").style.color="light purple";
 }
 
+const lose = () => {
+    document.getElementById("#rgbValue").innerHTML = "Go back to CLASS!!";
+    document.getElementById("#rgbValue").style.color="red";
+}
