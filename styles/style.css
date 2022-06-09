@@ -47,3 +47,12 @@ p{
   border-style: solid;
   border-color: black;
 }
+
+.re {
+
+  height: 60px;
+  width: 120px;
+  text-align: center
+  background-color: rgb(236, 143, 20);
+  margin-top: 40px;
+}

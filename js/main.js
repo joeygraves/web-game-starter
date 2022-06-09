@@ -16,17 +16,6 @@ console.log(options);
 
 const answerIndex = randomBetween(0, 2);
 
-for (let i = 0; i < options.length; i++){
-    if (i === answerIndex){
-        options[i].style.backgroundColor = answer ;
-        options[i].addEventListener('click', win);
-
-    }
-    else {
-        options[i].style.backgroundColor = setNewColor();
-        options[i].addEventListener('click', lose);
-    }
-}
 
 const win = () => {
     document.getElementById("#rgbValue").innerHTML = "Cozy Vibess, Goodjob!!";
@@ -37,3 +26,22 @@ const lose = () => {
     document.getElementById("#rgbValue").innerHTML = "Go back to CLASS!!";
     document.getElementById("#rgbValue").style.color="red";
 }
+//I moved the for loop down so that it can grab the win and lose functions
+for (let i = 0; i < options.length; i++){
+    if (i === answerIndex){
+        options[i].style.backgroundColor = answer ;
+        options[i].addEventListener('click', win );
+
+    }
+    else {
+        options[i].style.backgroundColor = setNewColor();
+        options[i].addEventListener('click', lose );
+    }
+}
+
+const reBtn = document.querySelector('.re')
+
+const replay = () => {
+    window.location.reload(true);
+}
+reBtn.addEventListener('click', replay)
